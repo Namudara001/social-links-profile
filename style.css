@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+    --Green: hsl(75, 94%, 57%);
+}
+
+body {
+    background: var(--Off-Black);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: "Inter", sans-serif;
+}
+
+.profile{
+    background-color: var(--Dark-Grey);
+    color: var(--White);
+    margin: 1rem;
+    padding: 2rem;
+    max-width: 400px;
+    text-align: center;
+    border-radius: .75rem;
+}
+
+
+.profile img {
+    width: 75px;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+}
+
+.profile h1 {
+    color: var(--White);
+    font-size: 1.75rem;
+}
+
+.profile .location {
+    color: var(--Green);
+    margin: .5rem 0 1.75rem;
+    font-weight: 700;
+}
+
+.profile ul {
+    margin-top: 1.75rem;
+}
+
+.profile ul li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.profile ul li a {
+    display: block;
+    background-color: var(--Grey);
+    color: var(--White);
+    padding: 1rem;
+    font-weight: 600;
+    border-radius: .5rem;
+    transition: .5s ;
+}
+
+.profile ul li a:hover {
+    color: var(--Off-Black);
+    background-color: var(--Green);
+}
